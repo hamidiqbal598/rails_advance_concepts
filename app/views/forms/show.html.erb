@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Form:</strong>
+  <%= @form.form_id %>
+</p>
+
+<p>
+  <strong>Acquired or disposed code:</strong>
+  <%= @form.acquired_or_disposed_code %>
+</p>
+
+<p>
+  <strong>Nature of ownership:</strong>
+  <%= @form.nature_of_ownership %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @form.code %>
+</p>
+
+<p>
+  <strong>Shares:</strong>
+  <%= @form.shares %>
+</p>
+
+<p>
+  <strong>Security title:</strong>
+  <%= @form.security_title %>
+</p>
+
+<p>
+  <strong>Direct or indirect code:</strong>
+  <%= @form.direct_or_indirect_code %>
+</p>
+
+<p>
+  <strong>Form type:</strong>
+  <%= @form.form_type %>
+</p>
+
+<p>
+  <strong>Equity sqap invloved:</strong>
+  <%= @form.equity_sqap_invloved %>
+</p>
+
+<p>
+  <strong>Transaction date:</strong>
+  <%= @form.transaction_date %>
+</p>
+
+<p>
+  <strong>Shares after:</strong>
+  <%= @form.shares_after %>
+</p>
+
+<p>
+  <strong>Price per share:</strong>
+  <%= @form.price_per_share %>
+</p>
+
+<%= link_to 'Edit', edit_form_path(@form) %> |
+<%= link_to 'Back', forms_path %>
