@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_02_122229) do
+ActiveRecord::Schema.define(version: 2023_04_02_130154) do
 
   create_table "comments", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -28,6 +28,23 @@ ActiveRecord::Schema.define(version: 2023_04_02_122229) do
   end
 
   create_table "dummy1s", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "forms", force: :cascade do |t|
+    t.integer "form_id"
+    t.string "acquired_or_disposed_code"
+    t.string "nature_of_ownership"
+    t.string "code"
+    t.integer "shares"
+    t.string "security_title"
+    t.string "direct_or_indirect_code"
+    t.string "form_type"
+    t.boolean "equity_sqap_invloved"
+    t.date "transaction_date"
+    t.integer "shares_after"
+    t.float "price_per_share"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1,0 +1,77 @@
+<%= form_with(model: form) do |form| %>
+  <% if form.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(form.errors.count, "error") %> prohibited this form from being saved:</h2>
+
+      <ul>
+        <% form.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :form_id %>
+    <%= form.number_field :form_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :acquired_or_disposed_code %>
+    <%= form.text_field :acquired_or_disposed_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nature_of_ownership %>
+    <%= form.text_field :nature_of_ownership %>
+  </div>
+
+  <div class="field">
+    <%= form.label :code %>
+    <%= form.text_field :code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shares %>
+    <%= form.number_field :shares %>
+  </div>
+
+  <div class="field">
+    <%= form.label :security_title %>
+    <%= form.text_field :security_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :direct_or_indirect_code %>
+    <%= form.text_field :direct_or_indirect_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :form_type %>
+    <%= form.text_field :form_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :equity_sqap_invloved %>
+    <%= form.check_box :equity_sqap_invloved %>
+  </div>
+
+  <div class="field">
+    <%= form.label :transaction_date %>
+    <%= form.date_select :transaction_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shares_after %>
+    <%= form.number_field :shares_after %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price_per_share %>
+    <%= form.text_field :price_per_share %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
