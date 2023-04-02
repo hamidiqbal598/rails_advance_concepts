@@ -35,6 +35,7 @@ gem "rake", "~> 13.0"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'factory_bot_rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -46,6 +47,7 @@ group :development do
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
   gem 'rails-erd'
+  gem 'pry-rails'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
@@ -54,7 +56,6 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   # gem 'capybara', '>= 3.26'
   # gem 'selenium-webdriver', '>= 4.0.0.rc1'
-  #
   gem 'rspec-rails'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
